@@ -6,9 +6,18 @@ from datetime import datetime
 import numpy as np
 import pandas as pd
 import streamlit as st
+def add_meta_tag():
+    meta_tag = """
+        <head>
+            <meta name="google-site-verification" content="QBiAoAo1GAkCBe1QoWq-dQ1RjtPHeFPyzkqJqsrqW-s" />
+        </head>
+    """
+    st.markdown(meta_tag, unsafe_allow_html=True)
 
+# Main code
+add_meta_tag()
 # add title of the web-app
-st.title(':green[Suman Capz] **Option Dashboard**')
+st.title(':green[NSE] **Option Dashboard**')
 st.header('option analysis',divider='rainbow')
 
 #create some tab for option analysis
